@@ -1,0 +1,302 @@
+:root {
+  --background: #fbfbfa;
+  --surface: #ffffff;
+  --text: #20201f;
+  --muted: #88847f;
+  --soft: #b5b0aa;
+  --border: #e8e5e1;
+  --tag: #f4f3f1;
+  --max-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 0 7vw;
+  background: rgba(251, 251, 250, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+}
+
+.monogram {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #6f6b66;
+  font-size: 0.95rem;
+  transition: color 180ms ease;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+main,
+footer {
+  width: min(var(--max-width), 86vw);
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: 88vh;
+  padding: 120px 0 110px;
+}
+
+.eyebrow,
+.section-label,
+.skill-label,
+.card-kicker {
+  margin: 0 0 24px;
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 850px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(4.4rem, 9vw, 8.6rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.role {
+  margin: 28px 0 4px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.specialties,
+.location {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.location {
+  margin-top: 12px;
+}
+
+.summary-block {
+  max-width: 860px;
+  margin-top: 110px;
+}
+
+.summary-text {
+  margin: 0;
+  color: #514e4a;
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  line-height: 1.55;
+}
+
+.section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-row h2,
+.education-card h2,
+.empty-card h2,
+.skill-group h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.timeline-row p,
+.education-card p,
+.empty-card p {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.timeline-row time {
+  color: var(--soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.empty-card,
+.education-card {
+  max-width: 650px;
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.empty-card .card-kicker {
+  margin-bottom: 14px;
+}
+
+.skill-group + .skill-group {
+  margin-top: 54px;
+}
+
+.skill-label {
+  margin: 18px 0 12px;
+  letter-spacing: 0.08em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  padding: 8px 15px;
+  color: #66625d;
+  background: var(--tag);
+  border-radius: 999px;
+  font-size: 0.94rem;
+}
+
+.contact-section {
+  min-height: 52vh;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.contact-grid > p {
+  max-width: 700px;
+  margin: 0;
+  color: #6f6b66;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 38px;
+  border-left: 1px solid var(--border);
+}
+
+.contact-links a {
+  width: fit-content;
+  border-bottom: 1px solid #9a958f;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 42px;
+  color: var(--soft);
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 64px;
+    padding: 0 6vw;
+  }
+
+  nav {
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  nav a {
+    font-size: 0.84rem;
+  }
+
+  main,
+  footer {
+    width: 88vw;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 88px 0 82px;
+  }
+
+  h1 {
+    font-size: clamp(3.7rem, 18vw, 5.6rem);
+  }
+
+  .summary-block {
+    margin-top: 80px;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .timeline-row,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .timeline-row time {
+    grid-row: 1;
+  }
+
+  .contact-links {
+    padding: 26px 0 0;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+}
