@@ -3,141 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="David Darjaa — Data and Operations Analyst portfolio.">
   <title>David Darjaa | Data Analyst</title>
-
-  <meta
-    name="description"
-    content="David Darjaa's data analytics portfolio featuring SQL, Python, Tableau, and business analytics projects."
-  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+  <header class="site-header">
+    <a class="monogram" href="#top" aria-label="Back to top">DD</a>
+    <nav aria-label="Primary navigation">
+      <a href="#summary">Summary</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-
-    <section>
-      <p>Data Analyst Portfolio</p>
-
+  <main id="top">
+    <section class="hero" id="summary">
+      <p class="eyebrow">Portfolio</p>
       <h1>David Darjaa</h1>
+      <p class="role">Data &amp; Operations Analyst</p>
+      <p class="specialties">SQL · Python · Tableau · Business Analysis</p>
+      <p class="location">San Francisco Bay Area</p>
 
-      <h2>Data Analyst | Business Analyst | Payment Operations</h2>
-
-      <p>
-        I use SQL, Python, and Tableau to turn complex data into clear,
-        practical business insights.
-      </p>
-
-      <a href="#projects">View Projects</a>
-      <a href="#">View Resume</a>
-      <a href="https://github.com/daviddarjaa">GitHub</a>
-      <a href="#">LinkedIn</a>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-
-      <p>
-        I am a Data and Operations Analyst with experience in banking
-        technology, payment systems, reporting automation, and business
-        operations. I am completing my B.A. in Data Science at UC Berkeley.
-      </p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-
-      <p>
-        SQL · Python · Tableau · PostgreSQL · Pandas · NumPy ·
-        Data Cleaning · Data Visualization · Business Analysis
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Featured Projects</h2>
-
-      <article>
-        <p>In Progress</p>
-        <h3>Payment Transaction Analytics</h3>
-        <p>
-          Analyzing transaction performance, approval rates, decline reasons,
-          merchant activity, and operational trends using SQL, Python, and Tableau.
+      <div class="summary-block">
+        <p class="section-label">About</p>
+        <p class="summary-text">
+          I turn complex operational and business data into clear analysis, reliable reporting, and practical decisions. My background combines data analytics with more than seven years of experience in banking technology, payment systems, and operational support.
         </p>
-        <a href="#">Project Details</a>
-        <a href="#">GitHub Repository</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <p class="section-label">Experience</p>
+
+      <article class="timeline-row">
+        <div>
+          <h2>Classroom Assistant</h2>
+          <p>Alameda County Registrar of Voters · Oakland, CA</p>
+        </div>
+        <time>03/2026 – 07/2026</time>
       </article>
 
-      <article>
-        <p>In Progress</p>
-        <h3>Sales and Customer Operations Dashboard</h3>
-        <p>
-          Combining multi-source sales and customer data to identify performance
-          trends, customer segments, and regional opportunities.
-        </p>
-        <a href="#">Project Details</a>
-        <a href="#">GitHub Repository</a>
+      <article class="timeline-row">
+        <div>
+          <h2>Data Analyst Intern</h2>
+          <p>Sinwise · Oakland, CA</p>
+        </div>
+        <time>05/2025 – 09/2025</time>
       </article>
 
-      <article>
-        <h3>Housing Valuation and Fairness Analysis</h3>
-        <p>
-          Explored more than 500,000 property records and evaluated a regression
-          model for prediction accuracy and assessment fairness.
-        </p>
-        <a href="#">Project Details</a>
-        <a href="#">GitHub Repository</a>
+      <article class="timeline-row">
+        <div>
+          <h2>Banking Technology &amp; Payment Systems</h2>
+          <p>Capital Bank · Mongolia</p>
+        </div>
+        <time>01/2012 – 12/2018</time>
       </article>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <h3>Data Analyst Intern — Sinwise</h3>
-      <p>
-        Built SQL and Python workflows for cleaning, validating, and combining
-        sales and customer data from multiple sources.
-      </p>
-
-      <h3>Classroom Assistant — Alameda County Registrar of Voters</h3>
-      <p>
-        Delivered election systems training and supported reliable operational
-        workflows during voting activities.
-      </p>
+    <section id="projects" class="section">
+      <p class="section-label">Projects</p>
+      <div class="empty-card">
+        <p class="card-kicker">Selected work</p>
+        <h2>Project case studies are being prepared.</h2>
+        <p>I am currently developing original SQL, Python, and Tableau projects for this portfolio.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
-
-      <h3>University of California, Berkeley</h3>
-      <p>B.A. in Data Science</p>
+    <section id="education" class="section">
+      <p class="section-label">Education</p>
+      <div class="education-card">
+        <h2>B.A. in Data Science</h2>
+        <p>University of California, Berkeley</p>
+        <p>Expected 2026</p>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Let's Connect</h2>
+    <section id="skills" class="section">
+      <p class="section-label">Skills &amp; Expertise</p>
 
-      <p>
-        I am interested in data analyst, business analyst, reporting analyst,
-        and payment operations opportunities.
-      </p>
+      <div class="skill-group">
+        <h2>Data Analytics</h2>
+        <p class="skill-label">Core</p>
+        <div class="tags">
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Tableau</span>
+          <span>PostgreSQL</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+        </div>
+      </div>
 
-      <a href="mailto:david.darjaa@outlook.com">Email Me</a>
-      <a href="#">LinkedIn</a>
+      <div class="skill-group">
+        <h2>Business &amp; Operations</h2>
+        <p class="skill-label">Focus</p>
+        <div class="tags">
+          <span>Business Analysis</span>
+          <span>Reporting Automation</span>
+          <span>Data Cleaning</span>
+          <span>Data Validation</span>
+          <span>Process Improvement</span>
+          <span>Payment Systems</span>
+        </div>
+      </div>
     </section>
 
+    <section id="contact" class="section contact-section">
+      <p class="section-label">Contact</p>
+      <div class="contact-grid">
+        <p>Open to data analyst, business analyst, reporting analyst, and payment operations opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:david.darjaa@outlook.com">Email</a>
+          <a href="https://github.com/daviddarjaa" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>© 2026 David Darjaa</p>
+    <a href="#top" aria-label="Back to top">↑</a>
   </footer>
-
 </body>
 </html>
